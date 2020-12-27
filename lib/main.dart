@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './custom_text.dart';
+import './text_control.dart';
 
 void main() => runApp(App());
 
@@ -29,10 +30,7 @@ class _AppState extends State<App> {
         body: Column(
           children: [
             CustomText(appText),
-            RaisedButton(
-              onPressed: _changeText,
-              child: Text('Change text anyway'),
-            )
+            TextControl(_changeText),
           ],
         ),
       ),
