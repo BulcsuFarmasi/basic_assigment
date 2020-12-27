@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './custom_text.dart';
+
 void main() => runApp(App());
 
 class App extends StatefulWidget {
@@ -26,11 +28,7 @@ class _AppState extends State<App> {
         appBar: AppBar(title: Text('Basic Assignment')),
         body: Column(
           children: [
-            Text(
-              appText,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24),
-            ),
+            CustomText(appText),
             RaisedButton(
               onPressed: _changeText,
               child: Text('Change text anyway'),
