@@ -3,6 +3,8 @@ import 'package:basic_assigment/custom_text.dart';
 import 'package:basic_assigment/text_control.dart';
 
 class App extends StatefulWidget {
+  const App({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _AppState();
@@ -24,7 +26,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Basic Assignment')),
+        appBar: AppBar(title: const Text('Basic Assignment')),
         body: Column(
           children: [
             CustomText(appText),

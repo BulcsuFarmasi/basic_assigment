@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class CustomText extends StatelessWidget {
   final String text;
 
-  CustomText(this.text);
+  const CustomText(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       textAlign: TextAlign.center,
-      style: TextStyle(fontSize: 24),
+      style: const TextStyle(fontSize: 24),
     );
   }
 }
