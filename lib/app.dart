@@ -16,7 +16,7 @@ class _AppState extends State<App> {
   _changeText() {
     setState(() {
       appText =
-      'I am the new text and I am deeply sorry that the previous text was changed';
+          'I am the new text and I am deeply sorry that the previous text was changed';
     });
   }
 
