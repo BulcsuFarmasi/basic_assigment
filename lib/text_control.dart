@@ -5,7 +5,7 @@ class TextControl extends StatelessWidget {
   TextControl(this.buttonPressed);
   @override
   build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: buttonPressed,
       child: Text('Change text anyway'),
     );
